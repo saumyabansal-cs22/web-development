@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible"content="ie-edge">
+        <title>browser events</title>
+    </head>
+    <style>
+        /* #btn{
+            padding: 34px;
+            background-color: red;
+            border: 2px solid black;
+            color: white;
+            font: bold;
+        } */
+    </style>
+    <body>
+       <!-- browser event:
+       click
+       contextmenu
+       mouseover/mouseout
+       mousedown/mouseup
+
+       submit
+       focus
+       DOM content load
+       transitioned -->
+       <div class="container">
+        <h1>
+            this is a paragraph
+        </h1>
+        
+    </div>
+    <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil cum repudiandae harum in explicabo, blanditiis quidem facilis sed a consequatur ut optio maiores eum libero voluptatum provident necessitatibus dicta est? Facilis eligendi hic, cumque officia aut odit tempore ea vel dolor modi fugiat a molestias, sed et esse incidunt est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet dolorem doloribus quae harum ducimus quo odit aspernatur nostrum fugiat porro.</p>
+    <button id="btn" onclick="hide()">Show/Hide</button>
+    <script>
+        function hide(){
+            // let btn = document.gelelementbyId('btn')
+            // let para=document.getElementById('para')
+            // para.addEventListener('mouseover', function run(){
+            //     alert('mouse inside');
+            // });
+            // function run(){
+                 
+            // }
+        
+        if (para.style.display !='None'){
+            para.style.display='None';
+        }
+        else{
+            para.style.display='block';
+        }
+    }
+    </script>
+</body>
+</html>
+
