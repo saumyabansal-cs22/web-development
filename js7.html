@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible"content="ie-edge">
+        <title>loops in js</title>
+    </head>
+    <body>
+        <div class="container">
+            this is a container
+        </div>
+        <script>
+            console.log("this is a tutorial")
+            // let i;
+            // for (i=0;i<3;i++){
+            //     console.log(i)
+            // }
+            // freinds=["rohan","vidya","kartikey","saumya"]
+            // freinds.forEach(function f(element) {
+            //     console.log("hello freind "+element)
+            // });
+            // for (ele of freinds){
+            //     console.log("hello again "+ ele)
+            // }
+            let employee={
+                name:"kartikey",
+                age:15,
+                class:5
+
+            }
+            for (keys in employee){
+                console.log(`my ${keys} is ${employee[keys]}`)
+            }
+
+            //While loop in js
+            let i=0;
+            while(i<5){
+                console.log(`${i} is less than 4`);
+                i++;
+            }
+        </script>
+    </body>
+</html>
