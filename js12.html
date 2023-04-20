@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible"content="ie-edge">
+        <title>arrow functions</title>
+    </head>
+    <body>
+        <div class="container">
+            arrow function tutorial
+        </div>
+        <script>
+            // function greet(){
+            //     console.log("Good morning;")
+            // }
+            // greet();
+            //**********Arrow functions**************
+        //  greet= ()=>{
+        //         console.log("Good morning;")
+        //     }
+            
+            // greet= ()=> console.log("Good morning;")
+            // greet()
+        //greet();        
+        setTimeout(() => {
+            console.log("we are inside arrow functions")
+        }, 3000);
+        // let sum =(a,b)=>{
+        //     return a+b;
+
+        let sum =(a,b)=> (a+b)
+        let obj1={
+            greeting:"Good morning harry",
+            name: ["harry","sejal"],
+            speak(){
+                this.name.forEach((student) => {
+                    console.log(this.greeting + "kukdoo koo " + student)
+                });
+            }
+        }
+        obj1.speak();
+        console.log(sum(30,20));
+        </script>
+        </body>
+        </html>
