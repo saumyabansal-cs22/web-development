@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible"content="ie-edge">
+        <title>settimeout and cleartimeout</title>
+    </head>
+    <body>
+        <div class="com">
+            this is a container 
+            <span id="time">hello</span>
+        </div>
+        <script>
+            console.log("this is tutorial")
+            function greet(name,byetext){
+                console.log("hello good morning"+name+" "+byetext);
+            }
+            setTimeout(greet,5000, " kartikey"," take care");
+            timeout=setTimeout(greet,2000," saumya");
+            clearTimeout(timeout)
+            d=setInterval(greet,5000)
+            clearInterval(d)
+            function displaytime(){
+                time=new Date();
+                console.log(time);
+                document.getElementById('time').innerHTML='time'
+
+            }
+            setInterval(displaytime,1000)
+        </script>
+    </body>
+</html>
