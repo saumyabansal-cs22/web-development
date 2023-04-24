@@ -1,0 +1,50 @@
+.container{
+    height: 544px;
+    width: 100%;
+    border: 2px solid black;
+    /* initialising containers for flex box */
+    display: flex;
+    /* flex properties for flex cantainer */
+    flex-direction: row; /*default value is row*/
+    /* flex-direction: column;
+    flex-direction: row-reverse;
+    flex-direction: column-reverse; */
+     /* flex-wrap: nowrap;  default value */
+    /* flex-wrap: wrap-reverse; */
+    flex-flow: row-reverse nowrap; /*used to set direction and wrap in one go*/
+    /*justify content*/
+    justify-content: center ;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    justify-content: space-around;
+    /*same as justify but does verticaly*/
+    align-items: center;
+    align-items: flex-end;
+    align-items: flex-start;
+    align-items: stretch;
+
+    /*flex properties for flex items*/}
+#item-1{
+        /* background-color: black; */
+        order: 200;
+}
+#item-2{
+    order: 40;
+}
+#item-3{
+    order: 5;
+}
+
+
+
+#item-2{
+    display: inline;
+}
+.item{
+    width: 80px;
+    height: 80px;
+    background-color: tomato;
+    border: 2px solid red;
+    margin: 10px;
+    padding: 3px;
+}
