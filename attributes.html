@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible"content="ie-edge">
+        <title>settimeout and cleartimeout</title>
+    </head>
+    <style>
+        .container{
+            margin: 34px 23px;
+        }
+        input{
+            display: block;
+        }
+        input[type="text"]{
+            padding: 23px;
+            border: 2px solid red;
+        }
+        a[target='_self']{
+            font-size: 44px;
+            color: violet;
+        }
+        li:nth-child(3){
+            color: aqua;
+        }
+        li:nth-child(2n){
+            color: brown;
+        }
+        li:nth-child(2n+1){
+            color: green;
+        }
+        li:nth-child(odd){
+            background-color: chartreuse;
+        }
+        li:nth-child(even){
+            color: crimson;
+        }
+    </style>
+    <body>
+        <h1><a href="http://google.com" target="_blank">Go to google</a></h1>
+        <h1><a href="http://facebook.com" target="_self">Go to facebook</a></h1>
+        <div class="container">
+            <form action="" class="form-control">
+                <input type="text" placeholder="enter your text">
+                <input type="password" placeholder="enter your password">
+                <input type="submit">
+            </form>
+         
+            <ul>
+                <li class="items" id="item-1">item-1</li>
+                <li class="items" id="item-2">item-2</li>
+                <li class="items" id="item-3">item-3</li>
+                <li class="items" id="item-4">item-4</li>
+                <li class="items" id="item-5">item-5</li>
+            </ul>
+        </div>
+    </body>
+    </html>
