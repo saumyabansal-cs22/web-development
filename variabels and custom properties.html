@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>variables and custom properties</title>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        /*to define global variables we define root block*/
+        :root{
+            --x: red;
+            --maxh: 733px; /*to set any height as global variable*/
+
+        }
+        .box{
+            /*creating variable*/
+            --x: pink;
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            border: 2px dashed bisque;
+            margin: 10px 10px;
+            box-shadow:  10px 10px 10px var(--x);
+
+        }
+        .container{
+            max-width: var(--maxh);
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--x);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
