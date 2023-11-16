@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-model</title>
+</head>
+<style>
+    
+    div{
+        border: 20px solid rgba(125, 10, 10);/*border gets included in the element thus height width of the element vary*/
+        background-color: rgb(92, 233, 174);
+        width: 400px;
+        height: 200px;
+        margin: 25px;
+        visibility: hidden;
+    }
+    span{
+        border: 20px solid rgba(125, 10, 10);/*border gets included in the element thus height width of the element vary*/
+        background-color: rgb(92, 233, 174);
+        width: 400px;
+        height: 200px;
+        margin: 25px;
+        display: inline-block;/*using this properety u can preserve the nature of inline elements using it as a block element*/
+    }
+    h4{
+        background-color: beige;
+        font-size: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    p{
+        background-color: rgb(253, 221, 140);
+    }
+</style>
+<body>
+    <div>
+        <h4>hello there this is heading 4</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+    <span>
+        <h4>hello there this is heading 4</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </span> <!--box model properties are not for inline elements-->
+    <span>
+        <h4>hello there this is heading 4</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </span>
+</body>
+</html>
